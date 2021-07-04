@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in or sign-up</title>
+</head>
+<body>
+    <div class="myflex">
+        
+    <div class="container">
+        
+        <h1>Submit Form to continue</h1>
+        <form action="" method="post">
+            Enter your username:<input type="text" name="username" id="username">
+            Enter your password:<input type="password" name="password" id="password">
+            Enter your confirm-password:<input type="password" name="cp" id="cp1">
+            See your-password<input type="checkbox" onclick="myf()" id="ch">
+            See your-confirm password<input type="checkbox" onclick="myfu()" id="chp">
+
+            <button id="submit">submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+    <style>
+        form,input{
+            display: list-item;
+            font-size: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-family: fantasy;
+           
+            
+
+
+        }
+        .myflex{
+            margin-top: 256px;
+            border: 6px solid white;
+            border-right-color: black;
+            border-left-color: black;
+            padding: 45px;
+
+
+
+
+
+
+
+
+
+
+        }
+        .myflex>div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #submit{
+            width: 40%;
+            height: 30px;
+            margin-top: 23px;
+        }
+        body{
+            background-color: black;
+        }
+        input{
+            border-top-color: black;
+            height: 50px;
+            background-color: black;
+            border-right-color: black;
+            border-left-color: black;
+        }
+        form{
+            border:8px solid white;
+            border-top-color: black;
+            border-bottom-color: black;
+            padding: 86px;
+        }
+        #submit{
+            width: 60%;
+            height: 60px;
+            font-size: 45px;
+            border: 8px solid black;
+            background-color: black;
+            border-top-color: blanchedalmond;
+            border-bottom-color: blanchedalmond;
+            color: white;
+            
+        }
+        #submit:hover{
+            font-size: 25px;
+            cursor: pointer;
+        }
+        input:hover{
+            border-color: black;
+            border-bottom-color: white;
+
+            
+
+
+           
+
+
+            
+
+
+
+
+
+        }
+        #ch,#chp{
+            width: 90%;
+            height: 90px;
+
+            
+
+        }
+        h1{
+            color: white;
+           border: 5px solid black;
+           border-top-color: blanchedalmond;
+            border-bottom-color: blanchedalmond;
+            font-size: 96px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+        }
+
+        
+        form{
+            
+            text-transform: uppercase;
+
+
+
+        }
+       
+
+
+    </style>
+    <script>
+        function myf() {
+            var x=document.getElementById("password");
+            if (x.type=="password") {
+                x.type="text";
+            }
+            else{
+                x.type="password";
+
+            }
+
+
+        }
+
+
+        function myfu() {
+            var x=document.getElementById("cp1");
+            if (x.type=="password") {
+                x.type="text";
+            }
+            else{
+                x.type="password";
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
